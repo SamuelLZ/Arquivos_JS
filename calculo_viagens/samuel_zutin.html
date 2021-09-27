@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Cálculo de viagens</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">Cálculo da viagem</button>
+    <br><br>
+    <div class="alert alert-primary" role="alert">
+        Orçamento
+    </div>
+    <script>
+        var botao = document.querySelector("button");
+        botao.addEventListener("click", Calculo);
+
+        function Calculo() {
+            var nome = prompt('Insira seu nome:');
+            var quantidadepassageiros = prompt('Insira a quantidade de passageiros:');
+            var valorviagem = prompt('Insira o valor da viagem:');
+            var resultado = valorviagem * quantidadepassageiros;
+            var mensagem = "Orçamento <br> Nome do cliente: " + nome + "<br>\n";
+            mensagem = mensagem + "Valor da viagem: " + resultado;
+            window.alert(mensagem);
+            document.querySelector("div").innerHTML = mensagem;
+        }
+    </script>
+</body>
+
+</html>

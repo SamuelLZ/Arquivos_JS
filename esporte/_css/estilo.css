@@ -1,0 +1,15 @@
+h1{  
+    font-weight: bold;
+    color: darkorange;
+    padding: 10px;     
+}
+
+h2{
+    color: rgb(236, 152, 16);
+    padding: 10px;
+    margin: 5px;
+}
+
+.ajuste{
+    text-align: center;
+}

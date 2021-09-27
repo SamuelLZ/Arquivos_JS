@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  >
+   </head>
+   <body>
+      <button type="button" class="btn btn-primary">Cálculo de Viagem</button>
+      <br>
+      <div class='alert alert-primary' role='alert'>
+         Orçamento
+      </div>
+      <script>
+         var botao= document.querySelector("button");
+         botao.addEventListener("click", Calculo );
+         
+         
+         function Calculo () {
+         var nome = prompt('Insira seu nome:');
+         var quantidadepassageiros = prompt('Insira a quantidade de passageiros:');
+         var valorviagem = prompt('Insira o valor da viagem:');
+         var resultado= 0 ; // aqui você fará o cálculo dos prompts !
+         
+         
+         var mensagem = "Orçamento <br>Nome do cliente: "+ nome + "<br>\n";
+         mensagem = mensagem + "Valor da Viagem: "+resultado;
+         
+         document.querySelector("div").innerHTML= mensagem;
+         
+         } 
+         
+      </script>
+   </body>
+</html>
